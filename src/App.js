@@ -46,6 +46,16 @@ function App() {
 					</div>
 				</div>
 			</div>
+		<div className="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt" target="_blank" rel="noreferrer">
+				Frontend Mentor
+			</a>. 
+			Coded by 
+			<a href="https://www.frontendmentor.io/profile/momenkamal221">
+				Mo'men Kamal
+			</a>.
+		</div>
 		</div>
 	);
 }
