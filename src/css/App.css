@@ -1,0 +1,148 @@
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", "Courier New", Courier, monospace;
+  background-color: hsl(27deg, 66%, 92%);
+}
+
+.expenses-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  width: 100vw;
+  min-width: 300px;
+  max-width: 540px;
+}
+.expenses-card__balance-slab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: hsl(10deg, 79%, 65%);
+  position: relative;
+  padding: 32px;
+  border-radius: 20px;
+}
+.expenses-card__my-balance {
+  font-size: 1rem;
+  color: hsl(33deg, 100%, 98%);
+  margin-bottom: 14px;
+}
+.expenses-card > div p:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(33deg, 100%, 98%);
+}
+.expenses-card__circle {
+  border-radius: 50%;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  justify-self: right;
+  align-self: center;
+  background-color: hsl(25deg, 47%, 15%);
+}
+.expenses-card__circle::before {
+  border: 2px solid hsl(33deg, 100%, 98%);
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  left: -50%;
+  box-sizing: border-box;
+}
+.expenses-card__expenses-chart-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 36px;
+  background-color: hsl(33deg, 100%, 98%);
+  border-radius: 10px;
+  padding: 40px;
+}
+.expenses-card__title {
+  color: hsl(25deg, 47%, 15%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.expenses-card__chart-slab {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  gap: min(12px, 4%);
+  padding: 36px 0;
+}
+.expenses-card__chart {
+  position: relative;
+  width: 100%;
+  max-width: 50px;
+  min-width: 25px;
+  text-align: center;
+}
+.expenses-card__chart-colum {
+  height: 50px;
+  background-color: hsl(10deg, 79%, 65%);
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+.expenses-card__chart-colum:hover {
+  background-color: #ef8a76;
+}
+.expenses-card__chart-colum:hover ~ .expenses-card__chart-spent {
+  display: block;
+}
+.expenses-card__chart-spent:not(.expenses-card__chart-colum:hover ~ .expenses-card__chart-spent) {
+  display: none;
+}
+.expenses-card__chart-colum_max {
+  background-color: hsl(186deg, 34%, 60%);
+}
+.expenses-card__chart-colum_max:hover {
+  background-color: #87bec4;
+}
+.expenses-card__chart-day {
+  color: hsl(28deg, 10%, 53%);
+  text-align: center;
+  font-size: 0.8rem;
+}
+.expenses-card__chart-spent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 8px));
+  font-size: clamp(0.5rem, min(2.36vw, 0.8rem), 0.8rem);
+  font-weight: 700;
+  padding: 10px 5px;
+  width: 100%;
+  color: hsl(33deg, 100%, 98%);
+  background-color: hsl(25deg, 47%, 15%);
+  border-radius: 5px;
+}
+.expenses-card__total {
+  color: hsl(28deg, 10%, 53%);
+  margin-bottom: 14px;
+}
+.expenses-card__summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.expenses-card__summary > div:nth-child(1) {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: hsl(25deg, 47%, 15%);
+}
+.expenses-card__summary > div:nth-child(2) {
+  justify-self: right;
+  text-align: right;
+  color: hsl(28deg, 10%, 53%);
+}
+.expenses-card__summary > div:nth-child(2) > div:nth-child(1) {
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+}
