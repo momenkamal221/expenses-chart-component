@@ -1,4 +1,3 @@
-# fylo-data-storage-component-master
 # [Frontend Mentor - Expenses chart component.](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt "challenge link")
 
 <h2 align="center">🔴<a href="https://momenkamal221.github.io/expenses-chart-component/">Live</a>&emsp;&emsp;☕<a href="https://github.com/momenkamal221/expenses-chart-component">solution</a>&emsp;&emsp;😃<a href="https://www.frontendmentor.io/solutions/fylo-data-storage-component-VO8L_f38DN">Post feedback</a></h2><br>
